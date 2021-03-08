@@ -4,7 +4,7 @@ from random import randint # we need a way to make random numbers
 target = randint(0,100) # up to 100 inclusive
 # create collections of odds, evens, squares and primes
 odd_ints  = (number for number in range(0,101) if number % 2 == 1 )# do we really need this???
-even_ints = [number for number in range(0, 101, 2) ] ' ooh a list'
+even_ints = [number for number in range(0, 101, 2) ] # ooh a list
 squares_list = [ num**2 for num in range(0,11) ] # we need to include 100!!
 primes_t = (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97)
 # set some boolean flags regarding the nature of our target number
