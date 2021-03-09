@@ -1,5 +1,5 @@
 Python Review 1  see https://pastebin.com/aviL68e9
-===============  until about 2:20
+===============  until about 2:30
 Use this as a coding challenge. Alter it as you see fit
 Feel free to search online for help, or ask each other, or ask me
 At the end, I'll invite anyone to share what they did

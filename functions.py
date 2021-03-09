@@ -37,8 +37,16 @@ def sumNumbers(*args): # we expect zero or more positional arguments
 # for example we might need a name, age and a list of roles (all strings)
 def makeUser(**kwargs): # Python will gather zero or more keyword arguments into a dict
     print(kwargs)
+    # we can pick out all the keys and all the values
     for key, value in kwargs.items(): # .items() returns the tuples, .value() returns the value 
-        print(key,value)
+        # print(key, kwargs[key])
+        print(key, value)
+
+# dict: items are 'name':'value' pairs
+#     an item     a key                a value
+d = {'usr':'Ada', 'age':42, 'fave_pet':'donkey'}
+# we can mutate items
+d['usr'] = 'Timnit'
 
 # immediate code
 result = addNums(y=4) # invoke the function
