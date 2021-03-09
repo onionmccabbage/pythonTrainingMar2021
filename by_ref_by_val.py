@@ -16,7 +16,7 @@ print(m,n,p) # m and p point to the same structure in memory
 
 # complex structures
 collect = {'user':n, 'id':a, 1:True}
-collect['user'] = [2,3,4] # does this alter the original structure called n?
+collect['user'] = [2,3,4] # This does NOT alter the original structure (called n)
 print(collect, n)
 
 # calling __main__
