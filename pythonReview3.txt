@@ -1,0 +1,32 @@
+Python Review Exercise 3   see https://pastebin.com/gHzxFzCv
+========================   until about 2:40
+Classes, inheritance, modules, (optional) property decorators and overrides (plus some nice print formatting)
+
+We need a class to represent 'Weather' with properties for
+- weather description, which must be a non-empty string
+- weather temperature, which must be a floating point number
+(You could use property decorators to do this, or just use normal methods if you prefer)
+
+Override the __str__ method so your Weather instances will print nicely
+
+Next, declare a class called 'LocalWeather' which inherits from the Weather class
+This class will also have properties for 'city' and 'country'
+Restrict 'country' to be any one of a set of 2 or 3 letter values
+  e.g. countries = {'ie', 'uk', 'fr', 'aus', 'tw'}
+
+Use separate modules to hold your class(es) and import them into a 'main.py' module
+Write descriptive docstrings in each class
+
+In the main module, create some 'Weather' instances and some 'LocalWeather' instances
+
+Optional
+--------
+The Weather class needs a method called 'changeTemp' which alters the original temperature by a small random amount, e.g.
+  from random inport randint
+  tempChange = randint(-5,5)
+
+In your 'Weather' class, write a method to convert the Celcius temperature to Kelvin
+( Kelvin = Celcius + 273 )
+
+See if you can write a 'validator' function which you use to decorate fields such as 'city' and 'description'
+(to ensure they are non-empty strings)
