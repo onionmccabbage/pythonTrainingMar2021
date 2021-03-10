@@ -1,10 +1,18 @@
 import requests
 import json
+import using_scope
+
+print(using_scope.meta)
 
 # a tuple since we will not need to change this
 cat_t = ('users', 'posts', 'albums', 'photos')
 
-def cleanup(**kwargs): # or def cleanup(category='users', id=0)
+# a simple version of the clenup
+def cleanup1(category='users', id=0):
+    data = {'category':category, 'id':id} # build a dictionary
+    return data
+
+def cleanup(**kwargs):
     '''
     clean up incoming data
     Expects 'category' and 'id' as keyword arguments
